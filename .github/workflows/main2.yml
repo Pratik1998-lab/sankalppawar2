@@ -1,0 +1,9 @@
+myjob:
+stage: deploy
+script:
+  # Single line command
+  - az component update --add sql
+
+  # Multi-line command
+  - az sql server create -n ${variable} -g ${variable} -l ${variable}
+    --administrator-login ${variable} --administrator-login-password ${variable}
